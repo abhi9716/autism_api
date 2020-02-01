@@ -21,7 +21,7 @@ class Predict(Resource):
         user_query = args['query']
         exam_query=[0,  0,  0,  0,  0,  0,  1,  1,  0,  1, 28,  3,  1,  0,  1]
         
-        prediction = model.predict(np.array([exam_query]))
+        prediction = model.predict(np.array([user_query]))
         
 
         # Output either 'Negative' or 'Positive' along with the score
